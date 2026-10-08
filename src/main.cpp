@@ -13,12 +13,9 @@
 
 LED led1(LED1_PIN, LED1_ACT);
 LED led2(LED2_PIN, LED2_ACT);
-
-// Con trỏ chỉ tới LED đang được chọn để điều khiển (Mặc định chọn LED 1)
 LED* activeLed = &led1;
 int activeLedIndex = 1;
 
-// Khởi tạo OneButton (activeLow = true)
 OneButton button(BTN_PIN, !BTN_ACT);
 
 void btnPush();
